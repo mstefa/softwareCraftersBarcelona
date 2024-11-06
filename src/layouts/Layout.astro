@@ -39,4 +39,31 @@ const { title } = Astro.props;
       rgb(var(--color-accent-blue), 0.85)
     );
   }
+
+  @keyframes flipInY {
+    from {
+      transform: rotateY(60deg);
+      opacity: 0;
+      /* animation-timing-function: ease-in; */
+    }
+    40% {
+      transform: rotateY(-10deg);
+      /* animation-timing-function: ease-in; */
+    }
+    70% {
+      transform: rotateY(10deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+
+  .animate-flipInY {
+    animation-name: flipInY;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
 </style>

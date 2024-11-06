@@ -1,5 +1,8 @@
 # Astro Starter Kit: Basics
 
+icons
+https://uxwing.com/
+
 ```sh
 npm create astro@latest -- --template basics
 ```
