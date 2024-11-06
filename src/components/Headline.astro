@@ -1,20 +1,26 @@
-<section class="bg-head-line relative h-[400px] bg-cover bg-center">
-  <div class="bg-accent bg-opacity-80 flex flex-row absolute inset-0">
+---
+import CalendarIcon from './atoms/CalendarIcon.astro';
+import LocationIcon from './atoms/LocationIcon.astro';
+---
+
+<section class="bg-head-line relative h-[500px] bg-cover bg-center">
+  <div
+    class="bg-opacity-25 bg-gradient-to-b from-accent-yellow/85 from-10% via-accent-blue/85 via-80% to-white to-95% flex flex-row absolute pb-5 inset-0"
+  >
     <div class="w-full h-full p-8 pr-2 flex items-center justify-rigth">
-      <h1
-        class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-8xl"
-      >
+      <h1 class="font-light text-text font-heading text-3xl md:text-8xl">
         SOFTWARE CRAFTERS BARCELONA
       </h1>
-    </div>
-    <div class="w-full h-full p-8 pl-2 flex items-center justify-left">
-      <h3 class="text-primary font-bold tracking-wide uppercase">
-        11TH EDITION
-      </h3>
+      <div class="w-full p-8 pl-2 flex-row items-center">
+        <h3 class="text-text font-light text-xl">11TH EDITION</h3>
+        <p class="text-text font-light flex text-xl tracking-wide">
+          <CalendarIcon color="fill-text" /> 24TH SEPTEMBER 2022
+        </p>
+        <p>
+          <LocationIcon color="fill-text" /> BARCELONA
+        </p>
+      </div>
     </div>
   </div>
+  ; ---
 </section>
-; ---
-
-<!--   style="background-image: url('public/img/event2024.jpeg');" -->
-<!-- class="flex flex-row absolute inset-0 bg-blue-500 opacity-50" -->

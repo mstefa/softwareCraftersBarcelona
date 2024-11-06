@@ -21,31 +21,22 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
   :root {
-    --accent: 241, 143, 1; /* F18F01 */
-    --accent-light: 4, 139, 168; /* 048BA8 */
-    --accent-dark: 49, 10, 101;
+    --color-background: 255, 255, 255; /* FFFFFF */
+    --color-text: 46, 64, 87; /* 2E4057 */
     --accent-gradient: linear-gradient(
       45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
+      rgb(var(--color-accent-yellow)),
+      rgb(var(--color-accent-blue)) 30%,
       white 60%
     );
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    background: #ffffff; /* Light background */
-    color: #000000; /* Dark text for contrast */
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
+    --image-gradient: linear-gradient(
+      45deg,
+      rgb(var(--color-accent-yellow), 0.85),
+      rgb(var(--color-accent-blue), 0.85)
+    );
   }
 </style>

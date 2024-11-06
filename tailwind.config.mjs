@@ -1,15 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
 			colors: {
-				primary: '#1A202C', // Customize primary colors
-				secondary: '#2D3748',
-				accent: '#38B2AC',
+				text: "#2e4057",
+				accent: {
+					yellow: '#F18F01',
+					blue: '#048BA8',
+				},
 			},
 			backgroundImage: {
-				'head-line': "url('public/img/event2024.jpeg')",
+				'head-line': "url('/img/event2024.jpeg')",
+			},
+			fontFamily: {
+				'heading': ['Barlow Condensed', 'sans-serif'],
 			},
 			fontSize: {
 				'xs': '.75rem',
