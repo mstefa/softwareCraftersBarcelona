@@ -1,0 +1,22 @@
+---
+export interface Props {
+  color?: string;
+  size?: string;
+}
+
+const { color = 'fill-black', size = 'h-6 w-6' } = Astro.props;
+---
+
+<svg
+  class={`${color} ${size} mr-1 ml-1`}
+  x="0px"
+  y="0px"
+  viewBox="0 0 122.88 117.55"
+  ><g
+    ><polygon
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      points="61.44,0 78.351,41.326 122.88,44.638 88.803,73.491 99.412,116.864 61.44,93.371 23.468,116.864 34.078,73.491 0,44.638 44.529,41.326 61.44,0"
+    ></polygon></g
+  ></svg
+>
